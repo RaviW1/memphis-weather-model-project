@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="TMIN <= 49.5\nmse = 311.1\nsamples = 13664\nvalue = 72.4"] ;
+1 [label="TMIN <= 34.5\nmse = 160.4\nsamples = 5695\nvalue = 55.8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="TMIN <= 24.5\nmse = 114.0\nsamples = 2423\nvalue = 46.6"] ;
+1 -> 2 ;
+3 [label="mse = 90.1\nsamples = 670\nvalue = 37.8"] ;
+2 -> 3 ;
+4 [label="mse = 80.8\nsamples = 1753\nvalue = 50.1"] ;
+2 -> 4 ;
+5 [label="TMAX-1 <= 57.5\nmse = 85.4\nsamples = 3272\nvalue = 62.6"] ;
+1 -> 5 ;
+6 [label="mse = 62.5\nsamples = 978\nvalue = 55.8"] ;
+5 -> 6 ;
+7 [label="mse = 67.1\nsamples = 2294\nvalue = 65.5"] ;
+5 -> 7 ;
+8 [label="TMAX-1 <= 82.5\nmse = 80.0\nsamples = 7969\nvalue = 84.3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="TMAX-1 <= 72.5\nmse = 50.0\nsamples = 3028\nvalue = 76.3"] ;
+8 -> 9 ;
+10 [label="mse = 37.6\nsamples = 1013\nvalue = 71.2"] ;
+9 -> 10 ;
+11 [label="mse = 35.9\nsamples = 2015\nvalue = 78.9"] ;
+9 -> 11 ;
+12 [label="TMAX-1 <= 90.5\nmse = 35.1\nsamples = 4941\nvalue = 89.2"] ;
+8 -> 12 ;
+13 [label="mse = 25.4\nsamples = 2768\nvalue = 86.2"] ;
+12 -> 13 ;
+14 [label="mse = 22.3\nsamples = 2173\nvalue = 92.9"] ;
+12 -> 14 ;
+}
